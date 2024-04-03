@@ -29,10 +29,7 @@
 
     // Deployed contract
     object "DeployedContract" {
-        code {
-            let fmp := 0x80 // Free memory pointer
-            mstore(0x40, fmp) // Setting free memory pointer in same arbitrary format as Solidity
-
+        code {  // Not setting FMP here as no need -> only "scratch space" is used
             if iszero(iszero(callvalue())) {    // Revert if ether is sent to contract
                 revert(0, 0)
             }
@@ -151,23 +148,3 @@
         }
     }
 }
-
-/*
-Public/external
-
-name() -> 0x06fdde03
-approve(address,uint256) -> 0x095ea7b3
-totalSupply() -> 0x18160ddd
-transferFrom(address,address,uint256) -> 0x23b872dd
-decimals() -> 0x313ce567
-balanceOf(address) -> 0x70a08231
-symbol() -> 0x95d89b41
-transfer(address,uint256) -> 0xa9059cbb
-allowance(address,address) -> 0xdd62ed3e
-
-events
-
-Transfer(address,address,uint256) -> 0xddf252ad
-Approval(address,address,uint256) -> 0x8c5be1e5
-
-*/

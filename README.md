@@ -10,7 +10,7 @@
   <h3 align="center">ERC20Yul</h3>
 
   <p align="center">
-    ERC20Yul: Sleek and efficient ERC20-compliant token written in pure Yul 
+    ERC20Yul: A sleek and efficient ERC20-compliant token written in pure Yul 
     <br />
     <a href="https://github.com/PeterMcQuaid/ERC20Yul#compilation"><strong>Compilation »</strong></a>
     <br />
@@ -34,9 +34,7 @@
 
 ## Introduction
 
-ERC20Yul is a decentralized, fully-automated lottery project. Prize draws occur daily, and utilize Chainlink's VRF and Automation workflows to provide a provably fair, decentralized lottery. Winners have 12 hours to claim their pot, otherwise their winnings role over into the next prize pot.
-
-ERC20Yul is fully upgradeable and pausable and aims to take full advantage of the liquidity and low fees that exist in top layer 2 protocols.
+ERC20Yul is an [ERC20](https://eips.ethereum.org/EIPS/eip-20) compliant token written in pure Yul. This allows for a more optimized and efficient token, where the individual bytes in each action can be controlled for. Ultimately this provides a sleek and gas-minimized UX.
 
 ## Compilation
     
