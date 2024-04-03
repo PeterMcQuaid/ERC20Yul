@@ -4,15 +4,15 @@
 <br />
 <div align="center">
   <a href="https://github.com/PeterMcQuaid/ERC20Yul/images">
-    <img src="https://raw.githubusercontent.com/PeterMcQuaid/ERC20Yul/main/images/logo.JPG" alt="Logo">
+    <img src="https://github.com/PeterMcQuaid/ERC20Yul/blob/main/images/logo.jpg" alt="Logo">
   </a>
 
   <h3 align="center">ERC20Yul</h3>
 
   <p align="center">
-    Transforming Lotteries: Fair, Fast, and Fully Automated with ERC20Yul
+    ERC20Yul: Sleek and efficient ERC20-compliant token written in pure Yul 
     <br />
-    <a href="https://github.com/PeterMcQuaid/ERC20Yul#installation"><strong>Installation & Testing »</strong></a>
+    <a href="https://github.com/PeterMcQuaid/ERC20Yul#compilation"><strong>Compilation »</strong></a>
     <br />
     <br />
     <a href="https://github.com/PeterMcQuaid/ERC20Yul#contributions">Contribute to ERC20Yul</a>
