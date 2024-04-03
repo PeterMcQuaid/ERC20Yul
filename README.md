@@ -1,66 +1,61 @@
-## Foundry
+<a name="readme-top"></a>
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/PeterMcQuaid/ERC20Yul/images">
+    <img src="https://raw.githubusercontent.com/PeterMcQuaid/ERC20Yul/main/images/logo.JPG" alt="Logo">
+  </a>
 
-Foundry consists of:
+  <h3 align="center">ERC20Yul</h3>
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+  <p align="center">
+    Transforming Lotteries: Fair, Fast, and Fully Automated with ERC20Yul
+    <br />
+    <a href="https://github.com/PeterMcQuaid/ERC20Yul#installation"><strong>Installation & Testing »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/PeterMcQuaid/ERC20Yul#contributions">Contribute to ERC20Yul</a>
+    ·
+    <a href="https://github.com/PeterMcQuaid/ERC20Yul/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/PeterMcQuaid/ERC20Yul/issues">Request Feature</a>
+  </p>
+</div>
 
-## Documentation
 
-https://book.getfoundry.sh/
+## Table of Contents
 
-## Usage
+- [Introduction](#introduction)
+- [Compilation](#compilation)
+- [Legal Disclaimer](#legal-disclaimer)
+- [Contributions](#contributions)
+- [License](#license)
 
-### Build
+## Introduction
 
-```shell
-$ forge build
+ERC20Yul is a decentralized, fully-automated lottery project. Prize draws occur daily, and utilize Chainlink's VRF and Automation workflows to provide a provably fair, decentralized lottery. Winners have 12 hours to claim their pot, otherwise their winnings role over into the next prize pot.
+
+ERC20Yul is fully upgradeable and pausable and aims to take full advantage of the liquidity and low fees that exist in top layer 2 protocols.
+
+## Compilation
+    
+Run the following shell command to compile:
+```
+solc --strict-assembly ERC20Yul.sol --bin
 ```
 
-### Test
+## Legal Disclaimer
+  
+Please note that ERC20Yul is intended for educational and demonstration purposes. The author is not responsible for any loss of funds or other damages caused by the use of project or its contracts. Always ensure you have backups of your keys and use this software at your own risk
+  
+## Contributions
 
-```shell
-$ forge test
-```
+Pull requests are welcome! Please ensure that any changes or additions you make are well-documented and covered by test cases.
 
-### Format
+For any bugs or issues, please open an [issue](https://github.com/PeterMcQuaid/ERC20Yul/issues).
 
-```shell
-$ forge fmt
-```
 
-### Gas Snapshots
+## License
 
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details
